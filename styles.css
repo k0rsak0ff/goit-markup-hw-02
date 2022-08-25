@@ -1,0 +1,243 @@
+:root{
+    --title-text-color: #212121;
+    --primary-text-color: #000000;
+    --accent-color: #2196F3;
+    --on-dark-background-color: #FFFFFF;
+    --dark-background: #2F303A;
+    --paragraph-contact-info: #757575;
+
+}
+body{
+    color: var(--title-text-color);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1170px;
+}
+.list{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+}
+.projects-item{
+    text-decoration: none;
+}
+
+/* Header */
+.header{
+    border-bottom: 1px solid #ECECEC;
+    display: flex;
+}
+
+
+
+/* Logo */
+.logo-link {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+.logo-web {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+.logo-studio {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+
+
+
+
+/* Navigation */
+.navigation{
+    display: flex;
+    gap: 50px;
+}
+.contacts{
+    display: flex;
+}
+.site-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--title-text-color);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+.site-link:hover,
+.site-link:focus,
+.auth-link:hover,
+.auth-link:focus,
+.site-link.current,
+.address-map:hover,
+.address-map:focus,
+.address:hover,
+.address:focus {
+    color: var(--accent-color);
+}
+.auth-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--paragraph-contact-info);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+
+
+
+
+
+
+/* Hero */
+.hero{
+    background-color: var(--dark-background);
+}
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--on-dark-background-color);
+    letter-spacing: 0.06em;
+}
+.button{
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--on-dark-background-color);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    border: none;
+    letter-spacing: 0.06em;
+    font-family: inherit;
+}
+.button:hover, .button:focus{
+    background-color:  #188CE8;
+}
+
+
+
+
+
+/* Section */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+          /* portfolio buttons */
+.button-filter:focus, .button-filter:hover{
+    background-color: var(--accent-color);
+    color: var(--on-dark-background-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.button-filter{
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    line-height: 1.62;
+    background: #F5F4FA;
+    cursor: pointer;
+}
+
+          /* Benefits */
+.section-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    color: var(--primary-text-color);
+}
+.benefits-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+.benefits-paragraph{
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--paragraph-contact-info);
+}
+
+          /* Our team */
+.team-section{
+    background: #F5F4FA;
+}
+.team-item{
+    background-color: var(--on-dark-background-color);
+}
+.team-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--title-text-color);
+}
+.team-paragraph{
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--paragraph-contact-info);
+
+}
+
+
+.project-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--title-text-color);
+}
+.project-paragraph{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--paragraph-contact-info);
+}
+
+
+
+
+/* Footer */
+.footer{
+    background-color: var(--dark-background);
+}
+.footer .logo-studio{
+    color: var(--on-dark-background-color);
+}
+.address-map{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--on-dark-background-color);
+    text-decoration: none;
+}
+.address{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
